@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/logoonglet.png" type="image/x-icon">
+        <title>STUDIO GD</title>
+        
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="img/logo.png" alt="Logo" />
+            <nav class="nav">
+                <ul class="list">
+                    <li class="liste"><a class="liennav" href="index.html">Accueil</a></li>
+                    <li class="liste"><a class="liennav" href="services.html">Services</a></li>
+                    <li class="liste"><a class="liennav" href="description.html">Description</a></li>
+                    <li class="liste"><a class="liennav" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mainn" style="margin-bottom: 2%">
+            <div id="alert" class="alert">
+                <p>Message envoyé, merci d'avoir pris le temps de nous écrire</p>
+            </div>
+            <div class="contactt">
+                <h2 class="titre">Contact</h2>
+
+                <div class="contactemot1">
+                    &#128222; 01.36.54.36.85
+                </div>
+                    <br>
+                <div class="contactemot2">
+                    &#9993; <span class="spancontactmot2">contact@studio.gd</span>
+                </div>
+                    <br>
+                <div class="contactemot3">
+                    &#128205; 1 rue Jean Ritz, 74000, Annecy
+                </div>
+            </div>
+            <div class="formulaire">
+                <form class="formm">
+                    <div class="nomprenom">
+                        <input placeholder="Nom" pattern="[A-Z]{0-1}[a-z]{2-30}" class="nom" type="text" name="nom">
+                        <input placeholder="Prénom" pattern="[A-Z]{0-1}[a-z]{2-30}" class="prenom" type="text" name="prenom">
+                    </div>
+                    <input placeholder="Adresse mail" pattern="[a-z]{1-30}" class="mail" type="email" name="mail">
+                    <textarea placeholder="Message" class="message" type="text"></textarea>
+                    <button onclick="formul(event)" class="envoimail" type="submit">Envoyer le mail</button>
+                </form>
+            </div>
+            <iframe class="map" src="https://maps.google.com/maps?q=1%20rue%20Jean%20Ritz,%2074000,%20Annecy&t=&z=13&ie=UTF8&iwloc=&output=embed" height='550' frameBorder="0" allowFullScreen="" aria-hidden="false" tabIndex="0"></iframe>
+                
+        </main>
+        <footer>
+            <div class="mention">
+                <p>&copy; studio Guillaume Duval - 2022</p>
+                <a class="mentionlien" href="legal-notices.html">Mentions légales</a>
+            </div>
+            <div class="contact">
+                <ul class="listfooter">
+                    <li class="listefooter">contact@studiogd.fr</li>
+                    <li class="listefooter">01.36.54.36.85</li>
+                    <li class="listefooter">1 rue Jean Ritz, 74000, Annecy</li>
+                </ul>
+            </div>
+            <div class="page">
+                <ul class="listfooter">
+                    <li class="listefooter"><a class="lienfooter" href="index.html">Accueil</a></li>
+                    <li class="listefooter"><a class="lienfooter" href="services.html">Services</a></li>
+                    <li class="listefooter"><a class="lienfooter" href="description.html">Description</a></li>
+                    <li class="listefooter"><a class="lienfooter" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+    <script>
+        function formul(){
+            event.preventDefault();
+            document.getElementById('alert').style.display = "block";
+            setTimeout(() => {
+                document.getElementById('alert').style.display = "none";
+            }, 5000);
+        }
+    </script>
+</html>
