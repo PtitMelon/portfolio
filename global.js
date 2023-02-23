@@ -167,6 +167,7 @@ function powerPointAP2Click() {
 }
 
 var blocDocCount1 = 0;
+
 function blocDoc1() {
   if (blocDocCount1 == 0) {
     docOff()
@@ -179,6 +180,7 @@ function blocDoc1() {
 }
 
 var blocDocCount2 = 0;
+
 function blocDoc2() {
   if (blocDocCount2 == 0) {
     docOff()
@@ -190,6 +192,7 @@ function blocDoc2() {
   }
 }
 var blocDocCount3 = 0;
+
 function blocDoc3() {
   if (blocDocCount3 == 0) {
     docOff()
@@ -201,6 +204,7 @@ function blocDoc3() {
   }
 }
 var blocDocCount4 = 0;
+
 function blocDoc4() {
   if (blocDocCount4 == 0) {
     docOff()
@@ -212,6 +216,7 @@ function blocDoc4() {
   }
 }
 var blocDocCount5 = 0;
+
 function blocDoc5() {
   if (blocDocCount5 == 0) {
     docOff()
@@ -223,6 +228,7 @@ function blocDoc5() {
   }
 }
 var blocDocCount6 = 0;
+
 function blocDoc6() {
   if (blocDocCount6 == 0) {
     docOff()
@@ -234,6 +240,7 @@ function blocDoc6() {
   }
 }
 var blocDocCount7 = 0;
+
 function blocDoc7() {
   if (blocDocCount7 == 0) {
     docOff()
@@ -245,6 +252,7 @@ function blocDoc7() {
   }
 }
 var blocDocCount8 = 0;
+
 function blocDoc8() {
   if (blocDocCount8 == 0) {
     docOff()
@@ -256,6 +264,7 @@ function blocDoc8() {
   }
 }
 var blocDocCount9 = 0;
+
 function blocDoc9() {
   if (blocDocCount9 == 0) {
     docOff()
@@ -267,6 +276,7 @@ function blocDoc9() {
   }
 }
 var blocDocCount10 = 0;
+
 function blocDoc10() {
   if (blocDocCount10 == 0) {
     docOff()
@@ -278,6 +288,7 @@ function blocDoc10() {
   }
 }
 var blocDocCount11 = 0;
+
 function blocDoc11() {
   if (blocDocCount11 == 0) {
     docOff()
