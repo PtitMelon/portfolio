@@ -154,15 +154,86 @@ function powerPointClick() {
   }
 }
 
+function powerPointOff() {
+  powerAffiche2 = 0;
+  powerAffiche2_2 = 0;
+  powerAffiche5 = 0;
+  document.getElementById('AP2diapo').style.display = "none";
+  document.getElementById('AP2_2diapo').style.display = "none";
+  document.getElementById('AP3').style.display = "none";
+}
+
 var powerAffiche2 = 0;
 
 function powerPointAP2Click() {
   if (powerAffiche2 == 0) {
+    powerPointOff()
     document.getElementById('AP2diapo').style.display = "flex";
     powerAffiche2 = 1;
   } else {
     document.getElementById('AP2diapo').style.display = "none";
     powerAffiche2 = 0;
+  }
+}
+
+var powerAffiche5 = 0;
+
+function powerPointAP3Click() {
+  if (powerAffiche5 == 0) {
+    powerPointOff()
+    document.getElementById('AP3').style.display = "flex";
+    powerAffiche5 = 1;
+  } else {
+    document.getElementById('AP3').style.display = "none";
+    powerAffiche5 = 0;
+  }
+}
+
+function powerPointVeilleOff() {
+  powerAffiche3 = 0;
+  powerAffiche4 = 0;
+  document.getElementById('veilleprincipale').style.display = "none";
+  document.getElementById('veillesecondaire').style.display = "none";
+}
+
+var powerAffiche3 = 0;
+
+function powerPointVeillePrincipale() {
+  if (powerAffiche3 == 0) {
+    powerPointVeilleOff()
+    document.getElementById('veilleprincipale').style.display = "flex";
+    powerAffiche3 = 1;
+  } else {
+    document.getElementById('veilleprincipale').style.display = "none";
+    powerAffiche3 = 0;
+  }
+}
+var powerAffiche4 = 0;
+
+function powerPointVeilleSecondaire() {
+  if (powerAffiche4 == 0) {
+    powerPointVeilleOff()
+    document.getElementById('veillesecondaire').style.display = "flex";
+    console.log('test')
+    powerAffiche4 = 1;
+  } else {
+    document.getElementById('veillesecondaire').style.display = "none";
+    powerAffiche4 = 0;
+  }
+}
+
+
+
+var powerAffiche2_2 = 0;
+
+function powerPointAP2_2Click() {
+  if (powerAffiche2_2 == 0) {
+    powerPointOff()
+    document.getElementById('AP2_2diapo').style.display = "flex";
+    powerAffiche2_2 = 1;
+  } else {
+    document.getElementById('AP2_2diapo').style.display = "none";
+    powerAffiche2_2 = 0;
   }
 }
 
@@ -299,28 +370,159 @@ function blocDoc11() {
     blocDocCount11--
   }
 }
+var blocDocCount12 = 0;
+
+function blocDoc12() {
+  if (blocDocCount12 == 0) {
+    docOff()
+    document.getElementById('pdfdoc12').style.display = "flex"
+    blocDocCount12++
+  } else {
+    document.getElementById('pdfdoc12').style.display = "none"
+    blocDocCount12--
+  }
+}
+var blocDocCount13 = 0;
+
+function blocDoc13() {
+  if (blocDocCount13 == 0) {
+    docOff()
+    document.getElementById('pdfdoc13').style.display = "flex"
+    blocDocCount13++
+  } else {
+    document.getElementById('pdfdoc13').style.display = "none"
+    blocDocCount13--
+  }
+}
+
+var blocDocCount14 = 0;
+
+function blocDoc14() {
+  if (blocDocCount14 == 0) {
+    docOff()
+    document.getElementById('pdfdoc14').style.display = "flex"
+    blocDocCount14++
+  } else {
+    document.getElementById('pdfdoc14').style.display = "none"
+    blocDocCount14--
+  }
+}
+
+var blocDocCount15 = 0;
+
+function blocDoc15() {
+  if (blocDocCount15 == 0) {
+    docOff()
+    document.getElementById('pdfdoc15').style.display = "flex"
+    blocDocCount15++
+  } else {
+    document.getElementById('pdfdoc15').style.display = "none"
+    blocDocCount15--
+  }
+}
+
+var blocDocCount16 = 0;
+
+function blocDoc16() {
+  if (blocDocCount16 == 0) {
+    docOff()
+    document.getElementById('pdfdoc16').style.display = "flex"
+    blocDocCount16++
+  } else {
+    document.getElementById('pdfdoc16').style.display = "none"
+    blocDocCount16--
+  }
+}
+
+var blocDocCount17 = 0;
+
+function blocDoc17() {
+  if (blocDocCount17 == 0) {
+    docOff()
+    document.getElementById('pdfdoc17').style.display = "flex"
+    blocDocCount17++
+  } else {
+    document.getElementById('pdfdoc17').style.display = "none"
+    blocDocCount17--
+  }
+}
+
+var blocDocCount18 = 0;
+
+function blocDoc18() {
+  if (blocDocCount18 == 0) {
+    docOff()
+    document.getElementById('pdfdoc18').style.display = "flex"
+    blocDocCount18++
+  } else {
+    document.getElementById('pdfdoc18').style.display = "none"
+    blocDocCount18--
+  }
+}
+var blocDocCount19 = 0;
+
+function blocDoc19() {
+  if (blocDocCount19 == 0) {
+    docOff()
+    document.getElementById('pdfdoc19').style.display = "flex"
+    blocDocCount19++
+  } else {
+    document.getElementById('pdfdoc19').style.display = "none"
+    blocDocCount19--
+  }
+}
+var blocDocCount20 = 0;
+
+function blocDoc20() {
+  if (blocDocCount20 == 0) {
+    docOff()
+    document.getElementById('pdfdoc20').style.display = "flex"
+    blocDocCount20++
+  } else {
+    document.getElementById('pdfdoc20').style.display = "none"
+    blocDocCount20--
+  }
+}
 
 function docOff() {
-  blocDocCount1 = 0
-  blocDocCount2 = 0
-  blocDocCount3 = 0
-  blocDocCount4 = 0
-  blocDocCount5 = 0
-  blocDocCount6 = 0
-  blocDocCount7 = 0
-  blocDocCount8 = 0
-  blocDocCount9 = 0
-  blocDocCount10 = 0
-  blocDocCount11 = 0
-  document.getElementById('pdfdoc1').style.display = "none"
-  document.getElementById('pdfdoc2').style.display = "none"
-  document.getElementById('pdfdoc3').style.display = "none"
-  document.getElementById('pdfdoc4').style.display = "none"
-  document.getElementById('pdfdoc5').style.display = "none"
-  document.getElementById('pdfdoc6').style.display = "none"
-  document.getElementById('pdfdoc7').style.display = "none"
-  document.getElementById('pdfdoc8').style.display = "none"
-  document.getElementById('pdfdoc9').style.display = "none"
-  document.getElementById('pdfdoc10').style.display = "none"
-  document.getElementById('pdfdoc11').style.display = "none"
+  blocDocCount1 = 0;
+  blocDocCount2 = 0;
+  blocDocCount3 = 0;
+  blocDocCount4 = 0;
+  blocDocCount5 = 0;
+  blocDocCount6 = 0;
+  blocDocCount7 = 0;
+  blocDocCount8 = 0;
+  blocDocCount9 = 0;
+  blocDocCount10 = 0;
+  blocDocCount11 = 0;
+  blocDocCount12 = 0;
+  blocDocCount13 = 0;
+  blocDocCount14 = 0;
+  blocDocCount15 = 0;
+  blocDocCount16 = 0;
+  blocDocCount17 = 0;
+  blocDocCount18 = 0;
+  blocDocCount19 = 0;
+  blocDocCount20 = 0;
+  document.getElementById('pdfdoc1').style.display = "none";
+  document.getElementById('pdfdoc2').style.display = "none";
+  document.getElementById('pdfdoc3').style.display = "none";
+  document.getElementById('pdfdoc4').style.display = "none";
+  document.getElementById('pdfdoc5').style.display = "none";
+  document.getElementById('pdfdoc6').style.display = "none";
+  document.getElementById('pdfdoc7').style.display = "none";
+  document.getElementById('pdfdoc8').style.display = "none";
+  document.getElementById('pdfdoc9').style.display = "none";
+  document.getElementById('pdfdoc10').style.display = "none";
+  document.getElementById('pdfdoc11').style.display = "none";
+  document.getElementById('pdfdoc12').style.display = "none";
+  document.getElementById('pdfdoc13').style.display = "none";
+  document.getElementById('pdfdoc14').style.display = "none";
+  document.getElementById('pdfdoc15').style.display = "none";
+  document.getElementById('pdfdoc16').style.display = "none";
+  document.getElementById('pdfdoc17').style.display = "none";
+  document.getElementById('pdfdoc18').style.display = "none";
+  document.getElementById('pdfdoc19').style.display = "none";
+  document.getElementById('pdfdoc20').style.display = "none";
 }
