@@ -159,10 +159,12 @@ function powerPointOff() {
   powerAffiche2_2 = 0;
   powerAffiche2_3 = 0;
   powerAffiche5 = 0;
+  powerAffiche6 = 0;
   document.getElementById('AP2diapo').style.display = "none";
   document.getElementById('AP2_2diapo').style.display = "none";
   document.getElementById('AP2_3diapo').style.display = "none";
   document.getElementById('AP3').style.display = "none";
+  document.getElementById('AP4').style.display = "none";
 }
 
 var powerAffiche2 = 0;
@@ -214,6 +216,19 @@ function powerPointAP3Click() {
   } else {
     document.getElementById('AP3').style.display = "none";
     powerAffiche5 = 0;
+  }
+}
+
+var powerAffiche6 = 0;
+
+function powerPointAP4Click() {
+  if (powerAffiche6 == 0) {
+    powerPointOff()
+    document.getElementById('AP4').style.display = "flex";
+    powerAffiche6 = 1;
+  } else {
+    document.getElementById('AP4').style.display = "none";
+    powerAffiche6 = 0;
   }
 }
 
@@ -497,6 +512,19 @@ function blocDoc20() {
   }
 }
 
+var blocDocCount21 = 0;
+
+function blocDoc21() {
+  if (blocDocCount21 == 0) {
+    docOff()
+    document.getElementById('pdfdoc21').style.display = "flex"
+    blocDocCount21++
+  } else {
+    document.getElementById('pdfdoc21').style.display = "none"
+    blocDocCount21--
+  }
+}
+
 function docOff() {
   blocDocCount1 = 0;
   blocDocCount2 = 0;
@@ -518,6 +546,7 @@ function docOff() {
   blocDocCount18 = 0;
   blocDocCount19 = 0;
   blocDocCount20 = 0;
+  blocDocCount21 = 0;
   document.getElementById('pdfdoc1').style.display = "none";
   document.getElementById('pdfdoc2').style.display = "none";
   document.getElementById('pdfdoc3').style.display = "none";
@@ -538,4 +567,5 @@ function docOff() {
   document.getElementById('pdfdoc18').style.display = "none";
   document.getElementById('pdfdoc19').style.display = "none";
   document.getElementById('pdfdoc20').style.display = "none";
+  document.getElementById('pdfdoc21').style.display = "none";
 }
