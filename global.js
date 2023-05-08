@@ -157,9 +157,11 @@ function powerPointClick() {
 function powerPointOff() {
   powerAffiche2 = 0;
   powerAffiche2_2 = 0;
+  powerAffiche2_3 = 0;
   powerAffiche5 = 0;
   document.getElementById('AP2diapo').style.display = "none";
   document.getElementById('AP2_2diapo').style.display = "none";
+  document.getElementById('AP2_3diapo').style.display = "none";
   document.getElementById('AP3').style.display = "none";
 }
 
@@ -173,6 +175,32 @@ function powerPointAP2Click() {
   } else {
     document.getElementById('AP2diapo').style.display = "none";
     powerAffiche2 = 0;
+  }
+}
+
+var powerAffiche2_2 = 0;
+
+function powerPointAP2_2Click() {
+  if (powerAffiche2_2 == 0) {
+    powerPointOff()
+    document.getElementById('AP2_2diapo').style.display = "flex";
+    powerAffiche2_2 = 1;
+  } else {
+    document.getElementById('AP2_2diapo').style.display = "none";
+    powerAffiche2_2 = 0;
+  }
+}
+
+var powerAffiche2_3 = 0;
+
+function powerPointAP2_3Click() {
+  if (powerAffiche2_3 == 0) {
+    powerPointOff()
+    document.getElementById('AP2_3diapo').style.display = "flex";
+    powerAffiche2_3 = 1;
+  } else {
+    document.getElementById('AP2_3diapo').style.display = "none";
+    powerAffiche2_3 = 0;
   }
 }
 
@@ -219,21 +247,6 @@ function powerPointVeilleSecondaire() {
   } else {
     document.getElementById('veillesecondaire').style.display = "none";
     powerAffiche4 = 0;
-  }
-}
-
-
-
-var powerAffiche2_2 = 0;
-
-function powerPointAP2_2Click() {
-  if (powerAffiche2_2 == 0) {
-    powerPointOff()
-    document.getElementById('AP2_2diapo').style.display = "flex";
-    powerAffiche2_2 = 1;
-  } else {
-    document.getElementById('AP2_2diapo').style.display = "none";
-    powerAffiche2_2 = 0;
   }
 }
 
