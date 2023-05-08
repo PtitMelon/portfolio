@@ -525,6 +525,58 @@ function blocDoc21() {
   }
 }
 
+var blocDocCount22 = 0;
+
+function blocDoc22() {
+  if (blocDocCount22 == 0) {
+    docOff()
+    document.getElementById('pdfdoc22').style.display = "flex"
+    blocDocCount22++
+  } else {
+    document.getElementById('pdfdoc22').style.display = "none"
+    blocDocCount22--
+  }
+}
+
+var blocDocCount23 = 0;
+
+function blocDoc23() {
+  if (blocDocCount23 == 0) {
+    docOff()
+    document.getElementById('pdfdoc23').style.display = "flex"
+    blocDocCount23++
+  } else {
+    document.getElementById('pdfdoc23').style.display = "none"
+    blocDocCount23--
+  }
+}
+
+var blocDocCount24 = 0;
+
+function blocDoc24() {
+  if (blocDocCount24 == 0) {
+    docOff()
+    document.getElementById('pdfdoc24').style.display = "flex"
+    blocDocCount24++
+  } else {
+    document.getElementById('pdfdoc24').style.display = "none"
+    blocDocCount24--
+  }
+}
+
+var blocDocCount25 = 0;
+
+function blocDoc25() {
+  if (blocDocCount25 == 0) {
+    docOff()
+    document.getElementById('pdfdoc25').style.display = "flex"
+    blocDocCount25++
+  } else {
+    document.getElementById('pdfdoc25').style.display = "none"
+    blocDocCount25--
+  }
+}
+
 function docOff() {
   blocDocCount1 = 0;
   blocDocCount2 = 0;
@@ -547,6 +599,10 @@ function docOff() {
   blocDocCount19 = 0;
   blocDocCount20 = 0;
   blocDocCount21 = 0;
+  blocDocCount22 = 0;
+  blocDocCount23 = 0;
+  blocDocCount24 = 0;
+  blocDocCount25 = 0;
   document.getElementById('pdfdoc1').style.display = "none";
   document.getElementById('pdfdoc2').style.display = "none";
   document.getElementById('pdfdoc3').style.display = "none";
@@ -568,4 +624,8 @@ function docOff() {
   document.getElementById('pdfdoc19').style.display = "none";
   document.getElementById('pdfdoc20').style.display = "none";
   document.getElementById('pdfdoc21').style.display = "none";
+  document.getElementById('pdfdoc22').style.display = "none";
+  document.getElementById('pdfdoc23').style.display = "none";
+  document.getElementById('pdfdoc24').style.display = "none";
+  document.getElementById('pdfdoc25').style.display = "none";
 }
